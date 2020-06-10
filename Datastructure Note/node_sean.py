@@ -50,6 +50,7 @@ class LinkedList:
     What's the runtime of this method?
     '''
     def remove_tail(self):
+        # if the linked list is empty 
         if self.tail is None:
             return None
         # save the tail Node's data
@@ -75,7 +76,10 @@ class LinkedList:
 ​
             # `current` is now pointing at the Node right
             # before the tail Node
+            self.tail = None
             self.tail = current
+            # self.tail.set_next(None)
+​
         
         return data
 ​
@@ -150,3 +154,4 @@ class LinkedList:
             current = current.get_next()
 ​
         return max_so_far
+Collaps
